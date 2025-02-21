@@ -8,21 +8,54 @@
   text-transform: uppercase;
   /* font-size: 1.125rem; */
   /* 폰트 단축 속성을 사용하여 글자 크기와 글꼴을 지정 */
-  font: 1.125rem, suit, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+.item {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: inherit;
+  /* padding-left: 8px;
+  padding-right: 8px; */
+  background-color: pink;
 }
 /* 태그 선택자 */
 /* 웹브라우저 스타일(밑줄)을 재정의 */
 /* 웹브라우저 링크 스타일(색상)을 재정의 (상속) */
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 /* a요소이면서 가상요소 선택자 */
-a::before {
-  content: '| ';
+.item.first:before {
+  content: '';
   /* font-variant: small-caps; */
 }
 /* a요소보다 우선순위 */
-a:first:before {
-  content: '';
+.item::before {
+  background-color: yellow;
+  content: '|';
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.member-link {
+  background-color: bisque;
+  text-transform: uppercase;
+  list-style: none; /* 불릿 제거 */
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline;
+    * {
+      font-size: 0.875rem;
+    }
+  }
+  span {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  a {
+    background-color: aqua;
+    text-decoration: none; /* 밑줄 제거 */
+    color: black;
+  }
 }
