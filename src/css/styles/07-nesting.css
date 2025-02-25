@@ -1,0 +1,16 @@
+.likelion {
+  .likelion__list {
+    list-style: none;
+    /* &는 클래스 이름을 참조한다는 의미 */
+    &:hover {
+      background-color: pink;
+    }
+  }
+  .likelion__item {
+    color: green;
+  }
+
+  .likelion__link {
+    color: inherit;
+  }
+}

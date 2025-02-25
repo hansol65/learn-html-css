@@ -1,0 +1,20 @@
+/* 배경 색상 */
+body {
+  background-color: hsl(180, 50%, 80%);
+  background-image: url(/src/assets/images/rabbit.png);
+  /* 배경 이미지 반복 여부(반복 안함) */
+  background-repeat: no-repeat;
+  /* 배경 이미지 위치 */
+  background-position: 50% 0;
+  /* body 요소의 최소 높이 */
+  min-height: 100vh;
+  /* fixed는 고정됨. scroll은 고정되어있지 않음. */
+  background-attachment: fixed;
+  /* 배경 이미지 크기 */
+  background-size: contain;
+  /* 단축 표기법으로 줄여서 선언, 먼저 선언한 것이 맨 위로 올라옴*/
+  background:
+    url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
+    url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
+    linear-gradient(pink, yellowgreen) pink;
+}
