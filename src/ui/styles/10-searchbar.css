@@ -1,37 +1,38 @@
 @import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
 @import '/src/common/a11y.css';
 @import '/src/common/base.css';
-@import '/src/common/theme.css';
-
 body {
   margin: 50px;
 }
-/* 링크 스타일 */
-
 /* 컴포넌트 */
 /* 로고 컴포넌트 */
 .brand {
   .logo {
     display: block;
 
-    &:focus {
+    /* svg {
+      transition: rotate 0.4s;
+    } */
+
+    /* &:focus {
       outline: none;
 
       svg {
-        inline-size: 2.25rem;
-        block-size: 2.25rem;
+        rotate: 1turn;
       }
-    }
+    } */
   }
 }
-/* 버튼 */
+
+/* 버튼(Circle) 컴포넌트 */
 .button-circle {
   position: relative;
   inline-size: 1.5rem;
   block-size: 1.5rem;
   border: 0;
-  background: linear-gradient(180deg, #23e97f 0%, #00dcc9 100%);
   border-radius: 50%;
+  background: #23e97f linear-gradient(180deg, #23e97f 0%, #00dcc9 100%);
 
   &::after {
     content: '';
@@ -39,17 +40,19 @@ body {
     inset-inline-start: 50%;
     inset-block-start: 50%;
     translate: -50% -50%;
-    inline-size: 50%;
-    block-size: 50%;
+    inline-size: 0.5rem;
+    block-size: 0.5rem;
     border-radius: 50%;
     background: #fff;
   }
 }
 
-/* 입력 서식 컴포넌트(searchbar) */
+/* 입력 서식 컴포넌트 */
 .input {
+  background: yellow;
   display: flex;
   flex-flow: row nowrap;
+
   input {
     block-size: 1.5rem;
     border: 1px solid var(--pastel-gray);
@@ -58,22 +61,26 @@ body {
     flex: 1 0 0;
   }
 }
+
 /* 검색 폼 */
 .form-search {
-  margin-block-start: 20%;
+  margin-block-start: 20px;
 
   fieldset {
     border: 0;
   }
+
   .search-wrapper {
     display: flex;
     flex-flow: row nowrap;
     gap: 1rem;
+
     .input {
       flex: 1 0 0;
     }
   }
 }
+
 /* 검색 바(searchbar) */
 .searchbar {
   margin-block-start: 20px;

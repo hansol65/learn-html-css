@@ -1,4 +1,6 @@
+@import '/src/common/best-reset.css';
 @import '/src/common/theme.css';
+@import "/src/common/base.css";
 
 /* 테이블 스타일링 */
 .table-wrapper {
@@ -11,8 +13,9 @@
 .table-styling {
   border: 1px solid currentColor;
   inline-size: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
   border-spacing: 0;
+  /* position: relative; */
 
   caption {
     font-size: 2rem;
@@ -45,7 +48,7 @@
   th,
   td {
     padding: 10px;
-    border: 1px solid currentColor;
+    /* border: 1px solid currentColor; */
   }
 
   thead {

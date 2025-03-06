@@ -1,14 +1,15 @@
-@import '/src/ui/components/avatar/avatar.css';
+@import "/src/ui/components/avatar/avatar.css";
+@import "/src/common/base.css";
 
 /* 아바타 리스트 */
 /* case 01 - inline-block */
-.case-01 {
+.case-01{
   background: yellow;
   margin: 20px;
   border: 2px solid red;
   border-radius: 4px;
-
-  ul {
+  
+  ul{
     width: 360px;
     background: pink;
     font-size: 0;
@@ -16,7 +17,7 @@
     margin: 0 auto;
   }
 
-  li {
+  li{
     background: lime;
     display: inline-block;
     font-size: 1rem;
@@ -25,25 +26,27 @@
 }
 
 /* case 02 - float */
-.case-02 {
+.case-02{
   background: yellow;
   margin: 20px;
   border: 2px solid red;
   border-radius: 4px;
-  display: flow-root;
-
-  ul {
+  
+  ul{
     width: 360px;
     background: pink;
     padding: 10px;
     margin: 0 auto;
     display: flow-root;
   }
-  li {
-    background-color: lime;
+
+  li{
+    background: lime;
     margin: 10px;
     float: left;
   }
 }
+
+
 /* case 03 - flex */
 /* case 04 - grid */

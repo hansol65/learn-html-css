@@ -33,8 +33,9 @@
 
 /* 그리드를 활용한 반응형 레이아웃 */
 /* 그리드 컨테이너 */
-.container {
+.container{
   display: grid;
+  padding: 0 20px;
 
   /* grid item은 order 속성을 활용하여 배치 순서를 변경할 수 있다. 
   .navigation{
@@ -47,14 +48,11 @@
     max-inline-size: 800px;
     margin: 0 auto;
 
-    .header,
-    .navigation,
-    .footer {
+    .header, .navigation, .footer{
       grid-column: 1 / -1;
     }
 
-    .content,
-    .sidebar {
+    .content, .sidebar{
       grid-column: span 6;
     }
   }
@@ -63,8 +61,7 @@
     max-width: 1280px;
     max-inline-size: 1280px;
 
-    .navigation,
-    .sidebar {
+    .navigation, .sidebar{
       grid-column: span 3;
     }
   }
