@@ -1,0 +1,53 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+.container {
+  background: var(--pastel-lavender);
+  padding: 1rem;
+
+  .case {
+    border: 1px solid red;
+    margin-block: 20px;
+  }
+
+  .case-01 {
+    column-width: 15rem;
+  }
+  .case-02 {
+    column-count: 4;
+    column-rule: 1px dotted green;
+
+    span {
+      display: block;
+      column-span: all;
+      background: var(--pastel-dark-blue);
+      color: white;
+      padding: 0.5rem;
+    }
+  }
+  /* case : columns 단축속성에 column-width 선언 */
+  .case-03 {
+    columns: 5rem auto;
+  }
+  .case-04 {
+    /* column-fill: balance; */
+    columns: 2;
+  }
+  .case-05 {
+    column-fill: auto;
+    columns: 2;
+    height: 100px;
+    block-size: 100px;
+  }
+}
+.wrapper {
+  background: var(--pastel-lemon);
+  padding: 1rem;
+  columns: 4;
+
+  .case {
+    break-after: avoid;
+  }
+}

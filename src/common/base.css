@@ -4,7 +4,7 @@ body {
   color: #121212;
   background: #fff;
   line-height: 1.15;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* 링크 스타일 */
@@ -13,6 +13,7 @@ a {
   text-decoration: none;
 }
 
+/* Components Container 스타일링 */
 .components-container {
   display: flex;
   flex-flow: column nowrap;
